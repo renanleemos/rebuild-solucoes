@@ -157,6 +157,12 @@
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
 .container__cards {
   border: 1px solid #e7e7e7;
   background: #fff;
@@ -198,6 +204,8 @@ p {
 }
 
 .container__secao2__conteudos {
+  display: flex;
+  gap: 20px;
   border-radius: 8px;
   padding: 50px 10px;
 }
