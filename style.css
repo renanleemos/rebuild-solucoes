@@ -255,9 +255,9 @@
 .container__secao3__titulo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-left: 5%;
-  }
+  margin-top: 10%;
+}
 
 #container__secao3__titulo {
   font-family: "Assistant";
@@ -269,11 +269,6 @@
   margin-bottom: 5%;
 }
 
-.disc {
-  list-style: disc;
-  color: #FFFFFF;
-}
-
 #container__secao3__texto {
   font-family: "Montserrat";
   font-style: normal;
@@ -283,6 +278,7 @@
   max-width: 392px;
   margin-bottom: 5%;
   color: #ffffff;
+  list-style: disc;
 }
 
 .container__secao3__imagem {
