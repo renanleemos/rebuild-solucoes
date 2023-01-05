@@ -122,19 +122,19 @@
 
 /* Início Seção 2 - Conteúdo Principal */
 
-.folha2 {
+#folha2 {
   position: absolute;
   right: 0;
   transform: translate(calc(0%), calc(100% - 120%));
 }
 
-.folha3 {
+#folha3 {
   position: absolute;
   left: 0;
   transform: translate(calc(0%), calc(100% - 110%));
 }
 
-.balao {
+#balao {
   position: absolute;
   left: 0;
   transform: translate(calc(0%), calc(100% - 30%));
@@ -157,36 +157,6 @@
   justify-content: center;
 }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.container__cards {
-  border: 1px solid #e7e7e7;
-  background: #fff;
-  border-radius: 8px;
-  max-width: 328px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 20px;
-  padding: 50px 10px;
-  margin: 0 auto;
-}
-
-p {
-  width: 80%;
-  margin: 16px auto;
-}
-
-.numero__card {
-  position: relative;
-  top: -51px;
-  left: -11px;
-}
-
 .container__secao2__texto {
   font-family: "Assistant";
   font-style: normal;
@@ -203,16 +173,43 @@ p {
   color: #1471c2;
 }
 
-.container__secao2__conteudos {
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.container__secao2__cards {
   display: flex;
   gap: 20px;
   border-radius: 8px;
   padding: 50px 10px;
 }
 
-.container__conteudos__imagem {
+.container__cards {
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  border-radius: 8px;
+  max-width: 328px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-bottom: 5%;
+  gap: 20px;
+  padding: 50px 10px;
+  margin: 0 auto;
+}
+
+.numero__card {
+  position: relative;
+  top: -51px;
+  left: -11px;
+}
+
+
+.container__conteudos__texto {
+  width: 80%;
+  margin: 16px auto;
 }
 
 .container__conteudos__titulo {
