@@ -42,7 +42,6 @@
   display: none;
 }
 
-
 #login {
   font-weight: 700;
   padding: 15px 67px;
@@ -73,6 +72,7 @@
   margin: 10% 10% 5% auto;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   gap: 77px;
 }
 
@@ -80,6 +80,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.txt {
+  display: none;
 }
 
 .container__texto__titulo {
@@ -182,7 +186,6 @@
   color: #1471c2;
 }
 
-
 .container {
   display: flex;
   justify-content: space-around;
@@ -205,7 +208,7 @@
   flex-direction: column;
   text-align: center;
   padding: 20px;
-  margin: 0 auto;
+  margin: 10% auto;
 }
 
 .numero__card {
@@ -213,7 +216,6 @@
   top: -21px;
   left: -21px;
 }
-
 
 .container__conteudos__texto {
   width: 80%;
@@ -242,11 +244,83 @@
   max-width: 285px;
 }
 
+.container__secao3 {
+  width: 100%;
+  background: #1471c2;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
 
+.container__secao3__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  }
 
+#container__secao3__titulo {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
 
+.disc {
+  list-style: disc;
+  color: #FFFFFF;
+}
 
+#container__secao3__texto {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 392px;
+  margin-bottom: 5%;
+  color: #ffffff;
+}
+
+.container__secao3__imagem {
+  margin-top: 10%;
+}
 
 @media screen and (max-width: 1280px) {
+  .container__main {
+    flex-direction: column;
+  }
+  .container__main__imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .container__texto__titulo {
+    display: none;
+  }
+
+  .txt {
+    font-family: "Assistant";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 54px;
+    color: #212121;
+    max-width: 535px;
+    margin-bottom: 20px;
+    display: inline;
+  }
+
+  #txt2 {
+    color: #1471c2;
+  }
+
+  .container__main__texto {
+    margin: 0 auto;
+  }
 }
