@@ -34,6 +34,15 @@
   text-decoration: none;
 }
 
+#menu {
+  display: none;
+}
+
+#open__menu {
+  display: none;
+}
+
+
 #login {
   font-weight: 700;
   padding: 15px 67px;
@@ -231,4 +240,13 @@
   text-align: center;
   color: #212121;
   max-width: 285px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+
 }
