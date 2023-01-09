@@ -1,22 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style2.css">
+	<title>Document</title>
 </head>
+
 <body>
-    <h1>display: flex;</h1>
-<section class="container flex">
-	<div class="item">Teste 1</div>
-	<div class="item">Teste 2</div>
-	<div class="item">Teste 3</div>
-	<div class="item">Teste 4</div>
-	<div class="item">Teste 5</div>
-	<div class="item">Teste 6</div>
-	<div class="item">Teste 7</div>
-</section>
+	<header id="header_fixed">
+		<div class="desktop__header">
+			<div>
+				<a href="#" class="logo">
+					LOGO
+				</a>
+
+			</div>
+			<div>
+
+				<ul class="menu_pattern">
+					<li><a href=""> Sobre </a></li>
+					<li><a href=""> Vantagens </a></li>
+					<li><a href=""> Processo </a></li>
+					<li><a href=""> Contato </a></li>
+				</ul>
+
+			</div>
+			<div>
+				<a class="menu_pattern" id="login">
+					login</a>
+				<a class="menu_pattern" id="abrir__conta">
+					Abrir conta</a>
+			</div>
+		</div>
+
+		<div id="menu">
+			<div class="menu__header">
+				<div class="menu__logo">
+					<a href="#" class="logo">
+						LOGO
+					</a>
+					<a onclick="closeMobMenuToggle()" id="close">
+						<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<line x1="1" y1="-1" x2="25.099" y2="-1" transform="matrix(0.735693 -0.677315 0.491429 0.870918 9 27.6772)" stroke="#53A000" stroke-width="2" stroke-linecap="round" />
+							<line x1="1" y1="-1" x2="25.099" y2="-1" transform="matrix(-0.735693 -0.677315 -0.491429 0.870918 27.2007 27.6772)" stroke="#53A000" stroke-width="2" stroke-linecap="round" />
+							<circle cx="17.5" cy="17.5" r="17" stroke="#212121" />
+						</svg>
+
+					</a>
+				</div>
+
+				<div class="menu__buttom">
+					<a href="#openModal" id="abrir__conta">
+						Abrir conta</a>
+					<a href="#openModal" id="login">
+						login</a>
+
+				</div>
+
+			</div>
+
+			<div class="menu__links">
+				<ul>
+					<li><a href=""> Sobre </a></li>
+					<hr>
+					<li><a href=""> Vantagens </a></li>
+					<hr>
+					<li><a href=""> Processo </a></li>
+					<hr>
+					<li><a href=""> Contato </a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<a onclick="mobMenuToggle()" id="open_menu">
+			<svg width="33" height="17" viewBox="0 0 33 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line x1="1.25" y1="1.75" x2="31.75" y2="1.75" stroke="#53A000" stroke-width="2.5" stroke-linecap="round" />
+				<line x1="1.25" y1="8.75" x2="31.75" y2="8.75" stroke="#53A000" stroke-width="2.5" stroke-linecap="round" />
+				<line x1="1.25" y1="15.75" x2="31.75" y2="15.75" stroke="#53A000" stroke-width="2.5" stroke-linecap="round" />
+			</svg>
+
+		</a>
+	</header>
+
+
+	<script>
+		//----menu responsive
+		var menu = document.getElementById("menu");
+		var close = document.getElementById("close");
+
+		$(window).resize(function () {
+			if ($(window).width() > 1015) {
+				menu.style.display = "none";
+				close.style.display = "none";
+			}
+		});
+
+		function closeMobMenuToggle() {
+			menu.style.display = "none";
+			close.style.display = "none";
+		}
+
+		function mobMenuToggle() {
+			menu.style.display = "flex";
+			close.style.display = "flex";
+		}
+
+	</script>
+	</section>
 </body>
+
 </html>
