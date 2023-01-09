@@ -130,7 +130,6 @@ header ul li a {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 77px;
   background: aliceblue;
   width: 100%;
   margin-top: 2%;
@@ -149,6 +148,10 @@ header ul li a {
 
 #txt3 {
   display: none;
+}
+
+.container__main__texto {
+  padding: 20px 50px;
 }
 
 .container__texto__titulo {
@@ -357,7 +360,7 @@ img {
   width: 100%;
 }
 
-/* @media screen and (max-width: 1350px) {
+@media screen and (max-width: 1350px) {
   .container__secao2__cards {
     width: 80%;
   }
@@ -369,7 +372,7 @@ img {
   #balao {
     display: none;
   }
-} */
+} 
 
 @media only screen and (max-width: 1015px) {
   .menu_pattern {
