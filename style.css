@@ -443,4 +443,13 @@ header ul li a {
     border-top: 1px solid #dcdcdc;
     width: 70%;
   }
-}
+
+  .container__main {
+    flex-direction: column;
+  }
+
+  .container__texto__titulo {
+    display: none;
+  }
+
+  
