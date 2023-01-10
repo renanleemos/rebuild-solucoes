@@ -257,13 +257,13 @@ header ul li a {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  padding: 0 20px;
 }
 
 .container__secao2__cards {
   display: flex;
   gap: 20px;
   border-radius: 8px;
-  margin-top: 7%;
 }
 
 .container__cards {
@@ -358,6 +358,24 @@ header ul li a {
 
 img {
   width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  #folha {
+    display: none;
+  }
+
+  #folha2 {
+    display: none;
+  }
+
+  #folha3 {
+    display: none;
+  }
+
+  #balao {
+    display: none;
+  }  
 }
 
 @media screen and (max-width: 1024px) {
