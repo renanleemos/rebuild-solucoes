@@ -360,21 +360,7 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 1350px) {
-  .container__secao2__cards {
-    width: 80%;
-  }
-
-  #folha {
-    display: none;
-  }
-
-  #balao {
-    display: none;
-  }
-} 
-
-@media only screen and (max-width: 1015px) {
+@media screen and (max-width: 1024px) {
   .menu_pattern {
     display: none;
   }
@@ -478,10 +464,6 @@ img {
     align-items: center;
   }
 
-  .container__texto__titulo {
-    display: none;
-  }
-
   .txt1 {
     display: flex;
     margin-top: 5%;
@@ -491,8 +473,9 @@ img {
     font-family: "Assistant";
     font-style: normal;
     font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 54px;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
     color: #212121;
     max-width: 535px;
     margin-bottom: 20px;
@@ -501,6 +484,10 @@ img {
 
   #txt2 {
     color: #1471c2;
+  }
+
+  .container__texto__titulo {
+    display: none;
   }
 
   #folha {
@@ -525,17 +512,47 @@ img {
   }
 
   .container__secao2__texto {
-    margin-bottom: 5%;
+    font-family: "Assistant";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.625rem;
+    line-height: 34px;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 10%;
   }
 
   .container__secao2__cards {
     flex-direction: column;
     margin: 0 auto;
-    gap: 0;
+    gap: 15px;
+    width: 100%;
   }
 
   .container__cards {
-    margin: 2% auto;
+    margin: 0 auto;
+    padding: 40px 0px;
+    width: 100%;
+  }
+
+  .container__cards div {
+    margin-bottom: 5%;
+  }
+
+  .numero__card {
+    position: relative;
+    top: -41px;
+    left: -1px;
+  }
+
+  .container__conteudos__titulo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__conteudos__texto {
+    max-width: 300px;
+    width: 100%;
   }
 
   #balao {
@@ -546,6 +563,7 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 0;
+    margin-top: 5%;
   }
 
   .container__secao3__titulo {
@@ -652,9 +670,4 @@ img {
   #txt3 li {
     margin-bottom: 5%;
   }
-
-  /* .container__conteudos__texto {
-    max-width: 285px;
-    width: auto;
-  } */
 }
